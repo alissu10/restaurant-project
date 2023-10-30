@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Andale Mono, monospace;
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* //padding-top: 20px; */
+    background-color: #343a41;
+    height: 80px;
+    color: white;
+}
+.navMenu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 60%;
+}
+.itemMenu {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative; /* Defina o posicionamento aqui */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.itemMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #eab254; /* Cor do sublinhado */
+    transition: width 0.3s; /* Animação de sublinhado */
+    transform-origin: left; /* O ponto de transformação para expandir da esquerda para a direita */
+}
+
+.itemMenu:hover::after {
+    width: 100%; /* Quando o mouse estiver sobre o elemento, aumente a largura para 100% */
+}
+
+.divHome{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 50%;
+}
+.slogan{
+    position: absolute;
+    right: 100px;
+    bottom: 400px;
+    color:  rgb(214, 214, 214);
+    font-weight: bold;
+    filter: drop-shadow(5px 5px 2px black);
+    font-size: 32px;
+    width: 20%;
+    text-align: right;
+    padding: 30px;
+    border-radius: 10px;
+}
+.homeSection{
+    display: flex;
+    align-items: center;
+    margin: 100px 50px;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+.textDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.sectionTitle{
+
+}
+.homeImage{
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.footer{
+    height: 200px;
+    background-color: #343a41;
+    color: white;
+}
