@@ -15,5 +15,5 @@
 
 ## Contato
  
-> antoniodias1106@gmail.com
-> davidguima30@gmail.com
+> - antoniodias1106@gmail.com
+> - davidguima30@gmail.com
