@@ -59,12 +59,110 @@ a{
    width: 100%; /* Quando o mouse estiver sobre o elemento, aumente a largura para 100% */
 }
 
-.divHome{
-   width: 30%;
-   height: 300px;
-   border-radius: 10px;
-   background-image: url("https://www.sabornamesa.com.br/media/k2/items/cache/7b98703f48b0025160f2b9b5aad2a874_XL.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: 10% 50%;
+.buffet{
+   text-align: center;
+   font-size: 50px;  /*Tamanho e Posição do Titulo "nosso buffet"*/
 }
+
+.content-section{
+   padding: 10px;
+   margin-top: 105px;
+   overflow: auto; /*Posição das Sections*/
+ }
+  
+ 
+.card-1, .card-2{
+    width: 38%;
+    float: right;
+    box-sizing: border-box; /*Posicionamento da primeira Section*/
+   }
+
+.card-1{
+   margin-right: 200px;
+   font-size: 20px; /*Tamanho e Posicionamento do texto de buffet*/
+      }
+   
+.card-2{
+   margin-right: 10%; /*Posicionamento da imagem de buffet*/
+  }
+
+.card-3, .card-4{
+   width: 38%;
+   float: right;
+   box-sizing: border-box; /*Posicionamento das Sections de Carnes, Massas, Sessão Oriental, Bebidas e Sobremesas */
+  } 
+
+.card-3{
+  margin-right: 143px;
+  font-size: 20px; /*Tamanho e Posicionamento do texto de Carnes, Massas, Sessão Oriental, Bebidas e Sobremesas */
+     }
+  
+.card-4{
+  margin-right: 10%; /* Posicionamento das imagens de Carnes, Massas, Sessão Oriental, Bebidas e Sobremesas */
+ } 
+ 
+.logo-2{
+      width: 95%;
+      margin-left: 10%;
+      border-radius: 10px; /*Tamanho e Posicionamento da imagem de buffet*/
+   }
+
+.logo-3{
+      width: 95%;
+      border-radius: 10px; /*Tamanho e Posicionamento da imagem de Carnes*/
+   }
+
+.logo-4{
+   width: 95%;
+   margin-left: 0%;
+   border-radius: 10px; /*Tamanho e Posicionamento da imagem de Massas*/
+}
+
+.logo-5{
+   width: 95%;
+   margin-right: 90%;
+   border-radius: 10px; /*Tamanho e Posicionamento da imagem da Sessão Oriental*/
+}
+
+.logo-6{
+   width: 95%;
+   margin-right: 90%;
+   border-radius: 10px; /*Tamanho e Posicionamento da imagem de Bebidas*/
+}
+
+.logo-7{
+   width: 95%;
+   margin-right: 90%;
+   border-radius: 10px; /*Tamanho e Posicionamento da imagem de Sobremesas*/
+}
+
+.logo-2:hover{
+   width: 97%; /*Largura da imagem de Buffet ao passar o Mouse em cima*/
+ }
+
+.logo-3:hover{
+     width: 97%; /*Largura da imagem de Carne ao passar o Mouse em cima*/
+ }
+
+.logo-4:hover{
+   width: 97%; /*Largura da imagem de Massas ao passar o Mouse em cima*/
+   }
+
+.logo-5:hover{
+       width: 97%; /*Largura da imagem da Sessão Oriental ao passar o Mouse em cima*/
+   }
+
+.logo-6:hover{
+      width: 97%; /*Largura da imagem de Bebidas ao passar o Mouse em cima*/
+  }
+
+.logo-7:hover{
+   width: 97%; /*Largura da imagem de Sobremesas ao passar o Mouse em cima*/
+}     
+
+footer{
+   height: 200px;
+    background-color: #343a41;
+    color: white; /*Rodapé da Pagina*/
+}
+
