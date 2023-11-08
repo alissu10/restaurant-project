@@ -160,9 +160,34 @@ a{
    width: 97%; /*Largura da imagem de Sobremesas ao passar o Mouse em cima*/
 }     
 
-footer{
-   height: 200px;
-    background-color: #343a41;
-    color: white; /*Rodapé da Pagina*/
+.footer{
+   height: 150px;
+   background-color: #343a41;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+}
+.footerUl{
+   list-style-type: none;
+   position: relative;
+   font-size: 18px;
+}
+.footerUl::before{
+   content: '';
+   width: 2px;
+   height: 100%;
+   background-color: white;
+   display: block; /* Torna o elemento um bloco */
+   position: absolute; /* Posiciona o elemento absolutamente */
+   top: 0; /* Alinha o topo da barra ao topo da lista */
+   left: 10px;
+}
+.footerTop{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   align-items: center;
 }
 
