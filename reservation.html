@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Reserva de Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="./styles/reservation.css">
 </head>
+
 <body>
-    <h1>Reserva de Restaurante</h1>
-    <form action="process_reservation.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    <nav class="navBar">
+        <h1 class="title">Restaurante Sabores Encantados</h1>
+        <ul class="navMenu">
+            <a href="index.html">
+                <li class="itemMenu">Home</li>
+            </a>
+            <a href="./buffet.html">
+                <li class="itemMenu">Buffet</li>
+            </a>
+            <a href="./reservation.html">
+                <li class="itemMenu">Reserva</li>
+            </a>
+            <a href="./register.html">
+                <li class="itemMenu">Cadastre-se</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="informations">
+            <h2>Reserva de Restaurante</h2>
+        <form id="form">
+            <div class="inputContainer">
+                <label for="nome">Nome:</label>
+                <input type="text" id="name" name="name" required>
 
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data" required>
-
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora" required>
-
-        <label for="pessoas">Número de Pessoas:</label>
-        <input type="number" id="pessoas" name="pessoas" required>
-
-        <label for="info">Informações adicionais:</label>
-        <textarea id="info" name="info"></textarea>
-
-        <input type="submit" value="Reservar">
-    </form>
+            </div>
+            <div class="inputContainer">
+                <label for="data">Data:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="inputContainer">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hour" name="hour" required>
+            </div>
+            <div class="inputContainer">
+                <label for="pessoas">Número de Pessoas:</label>
+                <input type="text" name="peopleNumber" id="peopleNumber">
+            </div>
+            <div class="inputContainer">
+                <label for="info">Informações adicionais:</label>
+                <textarea class="textArea" id="info" name="info"></textarea>
+            </div>
+            <div style="text-align: center;">
+                <input type="submit" class="submit" value="Reservar">
+            </div>
+        </form>
+        </div>
+        
+    </div>
+    <script src="./scripts/reservation.js"></script>
 </body>
+
 </html>

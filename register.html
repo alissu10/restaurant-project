@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro no Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="./styles/register.css">
 </head>
+
 <body>
+    <nav class="navBar">
+        <h1 class="title">Restaurante Sabores Encantados</h1>
+        <ul class="navMenu">
+            <a href="index.html">
+                <li class="itemMenu">Home</li>
+            </a>
+            <a href="./buffet.html">
+                <li class="itemMenu">Buffet</li>
+            </a>
+            <a href="./reservation.html">
+                <li class="itemMenu">Reserva</li>
+            </a>
+            <a href="./register.html">
+                <li class="itemMenu">Cadastre-se</li>
+            </a>
+        </ul>
+    </nav>
     <div class="container">
-        <h2>Cadastro</h2>
-        <form id="password-form">
-            <div class="form-group">
-                <label for="nome">Nome de Usuário:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-            </div>
-            <div class="form-group">
-                <label for="senha-confirm">Confirme a Senha:</label>
-                <input type="password" id="senha-confirm" name="senha-confirm" required>
-            </div>
-            <div id="senha-erro" class="erro"></div>
-            <button type="submit">Enviar</button>
-        </form>
-        
-            
+        <div class="informations">
+            <h2>Cadastro</h2>
+            <br>
+            <form id="registroForm" action="">
+                <div class="form-group">
+                    <label for="nome">Nome de Usuário:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha-confirm">Confirme a Senha:</label>
+                    <input type="password" id="senha-confirm" name="senha-confirm" required>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <br>
     </div>
-    <script src="script.js"></script>
+    <script src="./scripts/register.js"></script>
 </body>
+
 </html>
