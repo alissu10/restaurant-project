@@ -7,6 +7,19 @@
 </head>
 
 <body>
+    <div class="modalOverlay">
+        <button class="modalCloseButton" onclick="handleCloseModal()">✕</button>
+        
+        <div class="modalContainer">
+            <h2 class="modalTitle">Restaurantes Encantados</h2>
+            <ul class="modalUl">
+                <li> <a href="./index.html">Home</a> </li>
+                <li><a href="./buffet.html">Buffet</a> </li>
+                <li><a href="./reservation.html">Reserva</a></li>
+                <li><a href="./register.html">Cadastre</a></li>
+            </ul>
+        </div>
+    </div>
     <nav class="navBar">
         <h1 class="title">Restaurante Sabores Encantados</h1>
         <ul class="navMenu">
@@ -23,40 +36,58 @@
                 <li class="itemMenu">Cadastre-se</li>
             </a>
         </ul>
+        <button onclick="handleModalOpen()" class="menuButton">
+            <img src="./images/hamburger.png" alt="menuIcon" class="menuIcon">
+        </button>
     </nav>
     <div class="container">
         <div class="informations">
             <h2>Reserva de Restaurante</h2>
-        <form id="form">
-            <div class="inputContainer">
-                <label for="nome">Nome:</label>
-                <input type="text" id="name" name="name" required>
+            <form id="form">
+                <div class="inputContainer">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="name" name="name" required>
 
-            </div>
-            <div class="inputContainer">
-                <label for="data">Data:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="inputContainer">
-                <label for="hora">Hora:</label>
-                <input type="time" id="hour" name="hour" required>
-            </div>
-            <div class="inputContainer">
-                <label for="pessoas">Número de Pessoas:</label>
-                <input type="text" name="peopleNumber" id="peopleNumber">
-            </div>
-            <div class="inputContainer">
-                <label for="info">Informações adicionais:</label>
-                <textarea class="textArea" id="info" name="info"></textarea>
-            </div>
-            <div style="text-align: center;">
-                <input type="submit" class="submit" value="Reservar">
-            </div>
-        </form>
+                </div>
+                <div class="inputContainer">
+                    <label for="data">Data:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hour" name="hour" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="pessoas">Número de Pessoas:</label>
+                    <input type="text" name="peopleNumber" id="peopleNumber">
+                </div>
+                <div class="inputContainer">
+                    <label for="info">Informações adicionais:</label>
+                    <textarea class="textArea" id="info" name="info"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <input type="submit" class="submit" value="Reservar">
+                </div>
+            </form>
         </div>
-        
+
     </div>
+    <footer class="footer">
+        <div class="footerTop">
+            <h2 class="footerTitle">Restaurante Sabores Encantados</h2>
+            <div class="footerPages">
+                <div class="separator"></div>
+                <ul class="footerUl">
+                    <li>Home</li>
+                    <li>Buffet</li>
+                    <li>reserva</li>
+                </ul>
+            </div>
+        </div>
+        <h3>Todos os direitos reservados | Copyright©</h3>
+    </footer>
     <script src="./scripts/reservation.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

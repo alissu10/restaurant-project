@@ -2,111 +2,131 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buffet - Restaurante Sabores Encantados</title>
-    <link rel="stylesheet" href="./styles/buffet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buffet - Restaurante Sabores Encantados</title>
+  <link rel="stylesheet" href="./styles/buffet.css">
 </head>
 <!-- Testando o git -->
+
 <body>
-    <nav class="navBar">
-        <h1 class="title">Restaurante Sabores Encantados</h1>
-        <ul class="navMenu">
-            <a href="./index.html"><li class="itemMenu">Home</li></a>
-            <li class="itemMenu">Buffet</li>
-            <a href="./reservation.html"><li class="itemMenu">Reservas</li></a>
-            <a href="./register.html"><li class="itemMenu">Cadastre-se</li></a>
+  <div class="modalOverlay">
+    <button class="modalCloseButton" onclick="handleCloseModal()">✕</button>
+    <div class="modalContainer">
+        <h2 class="modalTitle">Restaurantes Encantados</h2>
+        <ul class="modalUl">
+            <li> <a href="./index.html">Home</a> </li>
+            <li><a href="./buffet.html">Buffet</a> </li>
+            <li><a href="./reservation.html">Reserva</a></li>
+            <li><a href="./register.html">Cadastro</a></li>
         </ul>
-      </nav>
-     <main>
-      <div>
-        <br>
-            <h1 class="buffet">Nosso Buffet</h1>
-            </div>
-            <section class="content-section">
-             <div class="card card-1">
-             <h2 >Buffet</h2>
-             <p>Nosso buffet impressiona pela diversidade e requinte, rico em cores, aromas e sabores, onde você encontrará além de frios e queijos finos, inúmeras opções
-               de saladas e acompanhamentos, como molhos, temperos e azeites nobres, rechauds repletos de frutos do mar e uma variedade de pratos quentes e guarnições.
-               </p>
-            </div>
-            </div>
-            <div class="card card-2">
-              <img src="./images/Buffet - Buffet.jpg" alt=""
-              class="logo-2">
-            </div>
-        </section>
-        <hr>
-        <section class="content-section">
-          <div class="card card-3">
-            <h2>Carnes</h2>
-            <p>Desfrute de nosso rodízio completo com mais de 25 cortes de carnes. Circulando em espetos, você come à vontade carnes bovinas, ovinas, suínas e de aves. 
-              Todas preparadas com maestria tendo cortes tradicionais como a Picanha, Alcatra, Costela, Cupim, Maminha, Fraldinha e Contra-Filé. 
-              Não podemos esquecer os mais nobres como Baby Beef, Bife Ancho, Carré, Pernil e Paleta de Cordeiro assadas no ponto certo para proporcionar a você a melhor 
-              experiência gastronômica.
-            </p>
-          </div>
-          <div class="card card-4">
-             <img src="./images/Buffet - Carne.jpg" alt=""
-             class="logo-3">
-          </div>
-        </section>
-        <hr>
-        <section class="content-section">
-          <div class="card card-3">
-              <h2>Massas</h2>
-              <p>Contamos com uma estação de massas, com grande variedade de molhos e ingredientes cuidadosamente selecionados, 
-                que irão valorizar ainda mais a sua massa preferida. Use a imaginação e crie sabores, 
-                essa experiência proporciona pratos únicos, exclusivos e inesquecíveis.
-              </p>
-          </div>
-          <div class="card card-4">
-             <img src="./images/Buffet - Massas.jpg" alt=""
-             class="logo-4">
-          </div>
-        </section>
-        <hr>
-        <section class="content-section">
-              <div class="card card-3">
-              <h2>Sessão Oriental</h2>
-              <p>Se você é fã de um excelente sushi, não deixe de passar por nossa estação oriental e experimentar as delícias da culinária Japonesa. 
-                Você poderá saborear entre sushis e sashimis sempre frescos, delicadamente preparados por nossos sushimans. Temos uma equipe qualificada e pronta para 
-                criar combinações sob medida para o seu apetite.
-              </p>
-          </div>
-          <div class="card card-4">
-            <img src="./images/Buffet - Oriental.jpg" alt=""
-            class="logo-5">
-         </div>
-        </section>
-        <hr>
-        <section class="content-section">
-          <div class="card card-3">
-          <h2>Bebidas</h2>
-          <p>Além de nosso tradicional coquetel de frutas (com ou sem álcool), não deixe de experimentar nossas deliciosas caipirinhas e caipiroskas. 
-            E para perfeita harmonização, em todas as unidades, você conta com adega climatizada na temperatura exata, com os mais variados rótulos, 
-            que atendem aos paladares mais exigentes.
-          </p>
+    </div>
+</div>
+  <nav class="navBar">
+    <h1 class="title">Restaurante Sabores Encantados</h1>
+    <ul class="navMenu">
+      <a href="./index.html">
+        <li class="itemMenu">Home</li>
+      </a>
+      <li class="itemMenu">Buffet</li>
+      <a href="./reservation.html">
+        <li class="itemMenu">Reservas</li>
+      </a>
+      <a href="./register.html">
+        <li class="itemMenu">Cadastre-se</li>
+      </a>
+    </ul>
+    <button onclick="handleModalOpen()" class="menuButton">
+      <img src="./images/hamburger.png" alt="menuIcon" class="menuIcon">
+  </button>
+  </nav>
+    <div>
+      <br>
+      <h1 class="buffet">Nosso Buffet</h1>
+    </div>
+
+    <section class="content-section">
+      <div class="textContainer">
+        <h2>Buffet</h2>
+        <p>Nosso buffet impressiona pela diversidade e requinte, rico em cores, aromas e sabores, onde você encontrará
+          além de frios e queijos finos, inúmeras opções
+          de saladas e acompanhamentos, como molhos, temperos e azeites nobres, rechauds repletos de frutos do mar e uma
+          variedade de pratos quentes e guarnições.
+        </p>
       </div>
-      <div class="card card-4">
-        <img src="./images/Buffet -Bebidas.jpg" alt=""
-        class="logo-6">
-     </div>
+      <img src="./images/Buffet - Buffet.jpg" alt="" class="sectionImage">
     </section>
+
+    <hr>
+
+    <section class="content-section">
+      <div class="textContainer">
+        <h2>Carnes</h2>
+        <p>Desfrute de nosso rodízio completo com mais de 25 cortes de carnes. Circulando em espetos, você come à
+          vontade carnes bovinas, ovinas, suínas e de aves.
+          Todas preparadas com maestria tendo cortes tradicionais como a Picanha, Alcatra, Costela, Cupim, Maminha,
+          Fraldinha e Contra-Filé.
+          Não podemos esquecer os mais nobres como Baby Beef, Bife Ancho, Carré, Pernil e Paleta de Cordeiro assadas no
+          ponto certo para proporcionar a você a melhor
+          experiência gastronômica.
+        </p>
+      </div>
+      <img src="./images/Buffet - Carne.jpg" alt="" class="sectionImage">
+    </section>
+
     <hr>
     <section class="content-section">
-      <div class="card card-3">
-      <h2>Sobremesas</h2>
-      <p>Para finalizar sua refeição, contamos com uma extensa variedade de sobremesas. Entre elas, 
-        podemos citar mousses, tortas, pavês, pudim, frutas da época, sorvetes, papaia com cassis e o delicioso Petit Gateau.
-      </p>
-  </div>
-  <div class="card card-4">
-    <img src="./images/Buffet - Sobremesas.jpg" alt=""
-    class="logo-7">
- </div>
-</section>
-    </main>
+      <div class="textContainer">
+        <h2>Massas</h2>
+        <p>Contamos com uma estação de massas, com grande variedade de molhos e ingredientes cuidadosamente
+          selecionados,
+          que irão valorizar ainda mais a sua massa preferida. Use a imaginação e crie sabores,
+          essa experiência proporciona pratos únicos, exclusivos e inesquecíveis.
+        </p>
+      </div>
+      <img src="./images/Buffet - Massas.jpg" alt="" class="sectionImage">
+    </section>
+    <hr>
+
+    <section class="content-section">
+      <div class="textContainer">
+        <h2>Sessão Oriental</h2>
+        <p>Se você é fã de um excelente sushi, não deixe de passar por nossa estação oriental e experimentar as delícias
+          da culinária Japonesa.
+          Você poderá saborear entre sushis e sashimis sempre frescos, delicadamente preparados por nossos sushimans.
+          Temos uma equipe qualificada e pronta para
+          criar combinações sob medida para o seu apetite.
+        </p>
+      </div>
+      <img src="./images/Buffet - Oriental.jpg" alt="" class="sectionImage">
+    </section>
+
+    <hr>
+
+    <section class="content-section">
+      <div class="textContainer">
+        <h2>Bebidas</h2>
+        <p>Além de nosso tradicional coquetel de frutas (com ou sem álcool), não deixe de experimentar nossas deliciosas
+          caipirinhas e caipiroskas.
+          E para perfeita harmonização, em todas as unidades, você conta com adega climatizada na temperatura exata, com
+          os mais variados rótulos,
+          que atendem aos paladares mais exigentes.
+        </p>
+      </div>
+        <img src="./images/Buffet -Bebidas.jpg" alt="" class="sectionImage">
+    </section>
+
+    <hr>
+    <section class="content-section">
+      <div class="textContainer">
+        <h2>Sobremesas</h2>
+        <p>Para finalizar sua refeição, contamos com uma extensa variedade de sobremesas. Entre elas,
+          podemos citar mousses, tortas, pavês, pudim, frutas da época, sorvetes, papaia com cassis e o delicioso Petit
+          Gateau.
+        </p>
+        </div>
+        <img src="./images/Buffet - Sobremesas.jpg" alt="" class="sectionImage">
+    </section>
     <footer class="footer">
       <div class="footerTop">
           <h2 class="footerTitle">Restaurante Sabores Encantados</h2>
@@ -119,8 +139,9 @@
               </ul>
           </div>
       </div>
-      <h3>Todos os direitos reservados | Copyright©</h3>
+      <h3 class="copyrightText">Todos os direitos reservados | Copyright©</h3>
   </footer>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

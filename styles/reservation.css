@@ -14,6 +14,48 @@ body {
 }
 
 /* Navigation Bar Styles */
+.modalOverlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #444;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.modalTitle{
+    width: 300px;
+}
+.modalCloseButton{
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 32px;
+    color: white;
+}
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+.modalTitle{
+    width: 300px;
+}
+.modalUl{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
 .navBar {
     display: flex;
     justify-content: space-around;
@@ -56,7 +98,16 @@ a{
 .itemMenu:hover::after {
     width: 100%; /* Quando o mouse estiver sobre o elemento, aumente a largura para 100% */
 }
-
+.menuIcon{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.menuButton{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
 .container {
     display: flex;
     align-items: center;
@@ -66,7 +117,7 @@ a{
 .informations{
     background-color: #343a41;
     border-radius: 10px;
-    width: 600px; 
+    width: 60%; 
     padding: 20px;
     color: white;
     margin-bottom: 100px;
@@ -104,4 +155,83 @@ label{
 /* Form Styles */
 form {
     margin-top: 20px;
+}
+.footer{
+    height: 150px;
+    background-color: #343a41;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.footerUl{
+    list-style-type: none;
+    position: relative;
+    font-size: 18px;
+}
+.footerUl::before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    display: block; /* Torna o elemento um bloco */
+    position: absolute; /* Posiciona o elemento absolutamente */
+    top: 0; /* Alinha o topo da barra ao topo da lista */
+    left: -10px;
+}
+.footerTop{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+@media(max-width: 1100px){
+    .navMenu{
+        width: 45%;
+    }
+ }
+ @media(max-width: 900px){
+    .title{
+        width: 70%;
+    }
+    .menuIcon{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+    .navMenu{
+        display: none;
+    }
+    .navBar{
+        justify-content: center;
+    }
+ }
+@media(max-width:550px){
+    .informations{
+        width: 80%;
+    }
+    .navBar{
+        justify-content: flex-start;
+        padding-left: 20px;
+        text-align: left;
+    }
+    .footerTop{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .footerUl{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .footerUl::before{
+        display: none;
+    }
+    .copyrightText{
+        text-align: center;
+    }
 }

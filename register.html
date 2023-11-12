@@ -7,6 +7,18 @@
 </head>
 
 <body>
+    <div class="modalOverlay">
+        <button class="modalCloseButton" onclick="handleCloseModal()">✕</button>
+        <div class="modalContainer">
+            <h2 class="modalTitle">Restaurantes Encantados</h2>
+            <ul class="modalUl">
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="./buffet.html">Buffet</a> </li>
+                <li><a href="./reservation.html">Reserva</a></li>
+                <li><a href="./register.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
     <nav class="navBar">
         <h1 class="title">Restaurante Sabores Encantados</h1>
         <ul class="navMenu">
@@ -23,6 +35,9 @@
                 <li class="itemMenu">Cadastre-se</li>
             </a>
         </ul>
+        <button onclick="handleModalOpen()" class="menuButton">
+            <img src="./images/hamburger.png" alt="menuIcon" class="menuIcon">
+        </button>
     </nav>
     <div class="container">
         <div class="informations">
@@ -46,13 +61,28 @@
                     <input type="password" id="senha-confirm" name="senha-confirm" required>
                 </div>
                 <div style="text-align: center;">
-                    <button type="submit">Enviar</button>
+                    <button class="submit" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
         <br>
     </div>
+    <footer class="footer">
+        <div class="footerTop">
+            <h2 class="footerTitle">Restaurante Sabores Encantados</h2>
+            <div class="footerPages">
+                <div class="separator"></div>
+                <ul class="footerUl">
+                    <li>Home</li>
+                    <li>Buffet</li>
+                    <li>reserva</li>
+                </ul>
+            </div>
+        </div>
+        <h3>Todos os direitos reservados | Copyright©</h3>
+    </footer>
     <script src="./scripts/register.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
